@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <!-- Botón de flecha -->
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/"></ion-back-button>
+      </ion-buttons>
+    <ion-title>agregar_libro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <ion-list>
+      <ion-item>
+        <ion-label position="stacked">Name</ion-label>
+        <ion-input type="text" [(ngModel)]="nombre" placeholder="Ingrese el nombre"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label position="stacked">Year</ion-label>
+        <ion-input type="text" [(ngModel)]="año" placeholder="Ingrese"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label position="stacked">Isbn</ion-label>
+        <ion-input type="email" [(ngModel)]="isbn" placeholder="Ingrese el isbn"></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="stacked">Editorial</ion-label>
+        <ion-input type="email" [(ngModel)]="editorial" placeholder="Ingrese el editorial"></ion-input>
+      </ion-item>
+  
+      <ion-button expand="full" (click)="registrar()">Registrar</ion-button>
+    </ion-list>
+  </ion-content>
+  

@@ -1,0 +1,60 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      autor
+    </ion-title>
+  </ion-toolbar>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-card>
+    <ion-item>
+      <ion-label>
+        Información
+      </ion-label>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label>
+        <p>Informaciokn nesesaria del creador del aplicativo</p>
+      </ion-label>
+    </ion-item>
+    
+    <ion-item>
+      <ion-button fill="clear" [routerLink]="['/curriculum']">
+        <ion-icon name="book-sharp"></ion-icon><br>
+        <h6>Currículum Vítae</h6>
+      </ion-button>
+    </ion-item>
+
+    <ion-item>
+      <ion-label style="display: flex; align-items: center;">
+        <ion-icon name="mail-sharp" style="margin-right: 8px;"></ion-icon>
+        <h4 style="margin: 0; font-weight: bold; margin-right: 8px;">Correo:</h4>
+        <p style="margin: 0;">aplicativos234&#64;gmail.com</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label style="display: flex; align-items: center;">
+        <ion-icon name="logo-twitter" style="margin-right: 8px;"></ion-icon>
+        <h4 style="margin: 0; font-weight: bold; margin-right: 8px;">Twitter:</h4>
+        <p style="margin: 0;">&#64;gmail.com</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label style="display: flex; align-items: center;">
+        <ion-icon name="call-sharp" style="margin-right: 8px;"></ion-icon>
+        <h4 style="margin: 0; font-weight: bold; margin-right: 8px;">Telefono:</h4>
+        <p style="margin: 0;">999 999 000</p>
+      </ion-label>
+    </ion-item>  
+  
+  </ion-card>
+</ion-content>

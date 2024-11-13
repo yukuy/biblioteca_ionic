@@ -1,0 +1,90 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <!-- Botón de flecha -->
+        <ion-buttons slot="start">
+          <ion-back-button defaultHref="/"></ion-back-button>
+        </ion-buttons>
+    <ion-title>Biblioteca</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-button fill="clear" [routerLink]="['/agregar-libro']">
+    <ion-icon name="push"></ion-icon>
+      Agregar libros
+  </ion-button>
+
+  <ion-card>
+    <h1>Predeterminados</h1>
+    <ion-card-content>
+      <ion-list>
+        <ion-item class="item-with-image">
+            <img alt="La Colmena" src="\assets\img\la colmena.jpg" />
+          <ion-label>
+            <h2>La colmena</h2>
+            <p>
+              <strong>Autor:</strong> Camilo José Cela Trulock
+            </p>
+            <p>
+              <strong>Año:</strong> 1951
+            </p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item class="item-with-image">
+            <img alt="La galata" src="\assets\img\la galata.jpg" />
+          <ion-label>
+            <h2>La Galata</h2>
+            <p>
+              <strong>Autor:</strong> Miguel de Cervantes Saavedra
+            </p>
+            <p>
+              <strong>Año:</strong> 1585
+            </p>
+          </ion-label>
+        </ion-item>
+  
+        <ion-item class="item-with-image">
+            <img alt="el quijote" src="\assets\img\el quijote.jpg" />
+          <ion-label>
+            <h2>El Ingenioso Idalgo Don Quijote de la Mancha</h2>
+            <p>
+              <strong>Autor:</strong> Miguel de Cervantes Saavedra
+            </p>
+            <p>
+              <strong>Año:</strong> 1605
+            </p>
+          </ion-label>
+        </ion-item>
+  
+        <ion-item class="item-with-image">
+            <img alt="La dorotea" src="\assets\img\la dorotea.jpg" />
+          <ion-label>
+            <h2>La Dorotea</h2>
+            <p>
+              <strong>Autor:</strong> Félix Lope de Vega y carpio
+            </p>
+            <p>
+              <strong>Año:</strong> 1632
+            </p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item class="item-with-image">
+            <img alt="La dragoneta" src="\assets\img\la dragoneta.jpg" />
+          <ion-label>
+            <h2>La Dragontea</h2>
+            <p>
+              <strong>Autor:</strong> Félix Lope de Vega y carpio
+            </p>
+            <p>
+              <strong>Año:</strong> 1602
+            </p>
+          </ion-label>
+        </ion-item>
+        
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

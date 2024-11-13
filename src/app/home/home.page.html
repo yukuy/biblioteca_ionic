@@ -1,20 +1,50 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
+    <ion-title >
+      Inicio
     </ion-title>
   </ion-toolbar>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Bienvenido a Biblioteca!</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Una biblioteca en línea es una plataforma digital que 
+      permite acceder a libros, artículos, y otros recursos
+      electrónicos desde cualquier dispositivo conectado a 
+      internet, facilitando el aprendizaje y la investigación
+      sin necesidad de espacio físico.    
+    </ion-card-content>
+  
+    <ion-button fill="clear" [routerLink]="['/biblioteca']">
+      <ion-icon name="school-sharp"></ion-icon>
+        Acceso a ¡Biblioteca!
+    </ion-button>
+        
+  </ion-card>
+  
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Información Sobre Autor</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      informacion del creador o desarrollador del aplicativo 
+    </ion-card-content>
+  
+    <ion-button fill="clear" [routerLink]="['/autor']">
+      <ion-icon name="person-sharp"></ion-icon>
+      Consultar información
+    </ion-button>
+    
+    
+  </ion-card>
+  
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  
 </ion-content>

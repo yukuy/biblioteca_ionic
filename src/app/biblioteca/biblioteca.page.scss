@@ -15,38 +15,86 @@ ion-header {
     }
   }
   
+/* Fondo degradado para el contenido */
+ion-content {
+  --background: linear-gradient(135deg, #2e2e2e, #f5f5f5); /* Fondo de gris oscuro a claro */
+  padding: 20px;
+}
 
-  .thin-divider {
-    height: 0px;            /* Ajusta el grosor de la línea */
-    background-color: #686767; /* Cambia el color si es necesario */
-    margin: 1px ;         /* Espacio alrededor de la línea */
-  }
-  /* Estilos para el botón */
-.arrow-button {
-    background-color: #4CAF50; /* Color de fondo */
-    color: white; /* Color del icono */
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 50%; /* Hace el botón circular */
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s ease;
-  }
-  
-  .arrow-button:hover {
-    background-color: #f1f0f3; /* Color al pasar el ratón */
-  }
-  .item-with-image {
-    display: flex;
-    align-items: center;
-  }
-  
-  .item-with-image img {
-    width: 100px; /* Ajusta el tamaño a tu preferencia */
-    height: auto;
-    margin-right: 10px; /* Espacio entre la imagen y el texto */
-  }
-  
+/* Estilo para los botones principales */
+ion-button {
+  color: #ffffff;
+  font-weight: bold;
+  margin: 10px 0;
+  --background: #007acc; /* Color de fondo azul para el botón */
+  --color-activated: #005fa3; /* Color al hacer clic */
+  display: flex;
+  align-items: center;
+}
+
+ion-button ion-icon {
+  margin-right: 8px;
+}
+
+/* Estilo para la tarjeta */
+ion-card {
+  background: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+  border-radius: 16px;
+  padding: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra */
+  margin-top: 20px;
+}
+
+/* Título de la tarjeta */
+ion-card h1 {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+/* Estilo de la lista */
+ion-list {
+  margin-top: 10px;
+}
+
+/* Estilo para cada ítem con imagen */
+.item-with-image {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+/* Efecto al pasar el cursor por encima */
+.item-with-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo para la imagen en cada ítem */
+.item-with-image img {
+  width: 60px;
+  height: 80px;
+  border-radius: 8px;
+  margin-right: 12px;
+}
+
+/* Estilo para el contenido del libro */
+ion-label h2 {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #007acc;
+  margin-bottom: 4px;
+}
+
+ion-label p {
+  font-size: 0.9em;
+  color: #555;
+  margin: 2px 0;
+}

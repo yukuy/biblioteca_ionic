@@ -14,4 +14,68 @@ ion-header {
       color: #ffffff; /* Color del título */
     }
   }
-  
+  /* Fondo degradado para ion-content */
+ion-content {
+  --background: linear-gradient(135deg, #333333, #e0e0e0); /* Degradado oscuro a claro */
+  padding: 20px;
+}
+
+/* Estilo general para la tarjeta (ion-card) */
+ion-card {
+  background: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+  border-radius: 16px;
+  padding: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra para resaltar la tarjeta */
+}
+
+/* Estilo de cada sección dentro de la tarjeta (ion-item) */
+ion-item {
+  --background: transparent; /* Fondo transparente para que se vea el color de la tarjeta */
+  margin-bottom: 10px;
+  padding: 10px 0;
+  color: #333; /* Color principal para el texto */
+}
+
+/* Estilo para los títulos y etiquetas */
+ion-label h4 {
+  font-weight: bold;
+  color: #333; /* Color oscuro */
+  margin-right: 8px;
+}
+
+ion-label p {
+  font-size: 1em;
+  color: #555; /* Gris oscuro para el texto */
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Estilo para los iconos en cada ion-item */
+ion-icon {
+  color: #ff6f61; /* Color de acento */
+  font-size: 1.2em;
+  margin-right: 8px;
+}
+
+/* Botón para el currículum */
+ion-button {
+  display: flex;
+  align-items: center;
+  color: #007acc;
+  font-weight: bold;
+}
+
+ion-button:hover {
+  background: #e0e0e0;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+/* Estilo para el texto del currículum */
+ion-button h6 {
+  font-size: 1em;
+  margin: 0;
+  margin-left: 6px;
+  color: inherit;
+  font-weight: bold;
+}

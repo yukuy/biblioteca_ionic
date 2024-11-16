@@ -1,52 +1,60 @@
+/* Encabezado */
 ion-header {
-    --background: rgba(243, 239, 239, 0.8); /* Fondo oscuro con transparencia */
-    color: #fff; /* Texto en blanco */
-  
-    ion-toolbar {
-      --background: rgba(92, 50, 247, 0.1); /* Fondo del toolbar con transparencia */
-      --color: #ffffff; /* Color del texto */
-    }
-  
-    ion-title {
-      font-size: 24px; /* Tamaño de fuente */
-      font-weight: bold; /* Texto en negrita */
-      text-align: center; /* Centrado */
-      color: #ffffff; /* Color del título */
-    }
-  }
-  
+  --background: rgba(243, 239, 239, 0.8); /* Fondo oscuro con transparencia */
+  color: #fff; /* Texto en blanco */
 
-  .thin-divider {
-    height: 0px;            /* Ajusta el grosor de la línea */
-    background-color: #686767; /* Cambia el color si es necesario */
-    margin: 1px ;         /* Espacio alrededor de la línea */
+  ion-toolbar {
+    --background: rgba(92, 50, 247, 0.1); /* Fondo del toolbar con transparencia */
+    --color: #ffffff; /* Color del texto */
   }
-  /* Estilos para el botón */
-.arrow-button {
-    background-color: #4CAF50; /* Color de fondo */
-    color: white; /* Color del icono */
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 50%; /* Hace el botón circular */
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s ease;
+
+  ion-title {
+    font-size: 24px; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+    text-align: center; /* Centrado */
+    color: #ffffff; /* Color del título */
   }
-  
-  .arrow-button:hover {
-    background-color: #f1f0f3; /* Color al pasar el ratón */
-  }
-  .item-with-image {
-    display: flex;
-    align-items: center;
-  }
-  
-  .item-with-image img {
-    width: 100px; /* Ajusta el tamaño a tu preferencia */
-    height: auto;
-    margin-right: 10px; /* Espacio entre la imagen y el texto */
-  }
-  
+}/* Fondo y espaciado para el contenido */
+ion-content {
+  --background: #f9f9f9;
+  padding: 20px;
+}
+
+/* Estilo de los campos de entrada */
+ion-item {
+  --background: #0a0906;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+ion-label {
+  color: #007acc; /* Color del texto de las etiquetas */
+  font-weight: bold;
+}
+
+ion-input {
+  color: #333;
+}
+
+/* Estilo del botón */
+ion-button {
+  --background: #007acc;
+  --color: #ffffff;
+  font-weight: bold;
+  margin-top: 20px;
+  box-shadow: 0 4px 12px rgba(0, 122, 204, 0.4);
+}
+
+ion-button:hover {
+  --background: #005fa3; /* Color más oscuro al pasar el cursor */
+}
+
+/* Estilo para el mensaje de éxito */
+ion-text {
+  display: block;
+  margin-top: 16px;
+  font-weight: bold;
+  font-size: 1.1em;
+  text-align: center;
+}

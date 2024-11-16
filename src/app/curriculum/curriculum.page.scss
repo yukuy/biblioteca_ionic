@@ -14,4 +14,49 @@ ion-header {
       color: #ffffff; /* Color del título */
     }
   }
+  /* Fondo degradado para ion-content */
+ion-content {
+  --background: linear-gradient(135deg, #333333, #ffffff); /* Degradado de gris oscuro a blanco */
+  padding: 20px;
+}
+
+/* Estilo para cada experiencia (ion-item) */
+ion-item {
+  background: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  margin-bottom: 15px;
+  padding: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Efecto hover en cada item para dar interactividad */
+ion-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+}
+
+/* Estilos para el encabezado (h2) */
+ion-label h2 {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #ff6f61; /* Color de acento */
+  margin-bottom: 8px;
+}
+
+/* Estilos para la descripción (p) */
+ion-label p {
+  font-size: 1em;
+  color: #555555; /* Gris oscuro para mejor legibilidad */
+  line-height: 1.5;
+}
+
+/* Estilo adicional para h1 si se desea */
+ion-label h1 {
+  font-size: 1.1em;
+  color: #777777;
+  font-style: italic;
+  text-align: center;
+}
+
   

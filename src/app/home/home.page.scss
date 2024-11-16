@@ -15,3 +15,65 @@ ion-header {
     }
   }
   
+/* Fondo degradado de negro a blanco para el contenido */
+ion-content {
+  --background: linear-gradient(135deg, #000000, #ffffff); /* Fondo negro a blanco */
+  padding: 20px;
+}
+
+/* Estilos para ion-card */
+ion-card {
+  background: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Sombra para destacar las tarjetas */
+  margin-bottom: 20px;
+  padding: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Efecto al pasar el cursor por encima de ion-card */
+ion-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Sombra más fuerte */
+}
+
+/* Estilo para el título de ion-card */
+ion-card-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333333; /* Color gris oscuro para el título */
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Estilo para el contenido de ion-card */
+ion-card-content {
+  font-size: 1em;
+  color: #555555; /* Texto en gris oscuro */
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* Botones en las tarjetas */
+ion-button {
+  --color: #ffffff; /* Color blanco para el texto */
+  --background: #ff6f61; /* Color de fondo del botón */
+  --border-radius: 8px;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra del botón */
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Efecto hover para el botón */
+ion-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4); /* Sombra más intensa al pasar el cursor */
+}
+
+/* Iconos en los botones */
+ion-icon {
+  margin-right: 8px;
+  color: #ffffff; /* Color blanco para el icono */
+}

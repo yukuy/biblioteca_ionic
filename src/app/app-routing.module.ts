@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'agregar-libro',
     loadChildren: () => import('./agregar-libro/agregar-libro.module').then( m => m.AgregarLibroPageModule)
   },
+  {
+    path: 'ver-libros',
+    loadChildren: () => import('./ver-libros/ver-libros.module').then( m => m.VerLibrosPageModule)
+  },
 ];
 
 @NgModule({

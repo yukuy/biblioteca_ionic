@@ -1,0 +1,22 @@
+<!-- src/app/ver-libros/ver-libros.page.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Lista de Libros</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="mensaje" class="mensaje">{{ mensaje }}</div>
+
+  <!-- Usar *ngFor para recorrer el array libros y acceder a cada libro -->
+  <ion-list *ngIf="libros.length > 0">
+    <ion-item *ngFor="let libro of libros">
+      <ion-label>
+        <h2>{{ libro.nombre }}</h2>
+        <p>ISBN: {{ libro.isbn }}</p>
+        <p>Editorial: {{ libro.editorial }}</p>
+        <p>Año: {{ libro.year }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
